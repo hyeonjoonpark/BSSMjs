@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<button onclick="tct()">textContent로 표시</button>
+		<button onclick="innerhtml()">innerHTML로 표시</button>
+        <h1>현재시각: </h1>
+        <div id="current"></div>
+
+        <script>
+            let now = new Date();
+            let $curDiv = document.getElementById("current");
+            function tct() {
+                $curDiv.textContent = now;
+            }
+            function innerhtml() {
+                $curDiv.innerhtml = "<h3>" + now + "</h3>";
+            }
+        </script>
+	</body>
+</html>
