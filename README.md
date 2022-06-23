@@ -1,0 +1,2 @@
+# BSSMjs
+BSSM JavaScript class
